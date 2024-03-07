@@ -24,26 +24,48 @@
 
 // aa("Cliente:_____,")
 
-const a = prompt("Ingresar monto a regalar para compra de al menos 3 boletos");
-const b = 100;
-const c = 3;
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const compraboleto = (disponible, boleto, limite) => {
-  if (disponible / boleto >= limite + 1) {
-    let devuelta = disponible - 3 * boleto;
-    console.log("caso2", 3, devuelta);
-    alert("La cantidad de boletos a comprar es: " +3+ "y la devuelta es: " + devuelta)
-  } else if (disponible / boleto >= 1) {
-    let cantidadboleto = Math.floor(disponible / boleto);
-    let devuelta = disponible - boleto * cantidadboleto;
-    alert("La cantidad de boletos a comprar es: " +cantidadboleto+ "y la devuelta es: " + devuelta)
-    console.log("caso1", cantidadboleto, devuelta);
+// const a = prompt("Ingresar monto a regalar para compra de al menos 3 boletos");
+// const b = 100;
+// const c = 3;
+
+// const compraboleto = (disponible, boleto, limite) => {
+//   if (disponible / boleto >= limite + 1) {
+//     let devuelta = disponible - 3 * boleto;
+//     console.log("caso2", 3, devuelta);
+//     alert("La cantidad de boletos a comprar es: " +3+ "y la devuelta es: " + devuelta)
+//   } else if (disponible / boleto >= 1) {
+//     let cantidadboleto = Math.floor(disponible / boleto);
+//     let devuelta = disponible - boleto * cantidadboleto;
+//     alert("La cantidad de boletos a comprar es: " +cantidadboleto+ "y la devuelta es: " + devuelta)
+//     console.log("caso1", cantidadboleto, devuelta);
+//   } else {
+//     alert(
+//       "el monto: " + disponible + " es insuficiente para comprar",
+//       "el precio de un boleto es: " + boleto
+//     );
+//   }
+// };
+
+// compraboleto(a, b, c);
+
+////////////////////////////////////////////////////////////////////////////
+
+const a = prompt(
+  "Ingrese 1 si miente, 2 si no miento, 3 si hay que repetir el juicio"
+);
+
+const decision = (a) => {
+  if (a == 1) {
+    alert("Hay que darle una descarga electrica");
+  } else if (a == 2) {
+    alert("Hay que dejarlo en libertad");
+  } else if (a == 3) {
+    alert("Hay que repetir el juicio");
   } else {
-    alert(
-      "el monto: " + disponible + " es insuficiente para comprar",
-      "el precio de un boleto es: " + boleto
-    );
+    alert("Ingrese un valor valido");
   }
 };
 
-compraboleto(a, b, c);
+decision(a);
