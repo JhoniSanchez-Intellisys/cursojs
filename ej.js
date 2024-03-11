@@ -67,16 +67,23 @@
 //   console.log(ff);
 // }
 
-const aa = [11, 55, 88, 445, 475, 96658, 524, 54, 658, 254, 69, 5];
-let i = 0;
+// const aa = [11, 55, 88, 445, 475, 96658, 524, 54, 658, 254, 69, 5];
+// let i = 0;
 
-otro: while (i < aa.length) {
-  
-  console.log("Otro", aa[i]);
-i++;
-  while (i < aa.length) {
-    i++;
-    console.log(aa[i]);
-    if (aa[i] == 475) continue otro;
+// otro: while (i < aa.length) {
+//   console.log("Otro", aa[i]);
+//   i++;
+//   while (i < aa.length) {
+//     i++;
+//     console.log(aa[i]);
+//     if (aa[i] == 475) continue otro;
+//   }
+// }
+
+const iterable = (...params) => {
+  for (const aa of params) {
+    console.log(aa * 2);
   }
-}
+};
+
+iterable(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
