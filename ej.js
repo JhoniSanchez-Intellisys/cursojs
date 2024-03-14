@@ -80,10 +80,54 @@
 //   }
 // }
 
-const iterable = (...params) => {
-  for (const aa of params) {
-    console.log(aa * 2);
-  }
-};
 
-iterable(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// const iterable = (...params) => {
+//   for (const aa of params) {
+//     console.log(aa * 2);
+//   }
+// };
+
+// iterable(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+
+
+
+
+// class Persona {
+//     constructor(nombre) {
+//     this.nombre = nombre;
+//     this.edad = 0;
+//   }
+
+//   saludar(x) {
+//     console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad+x} años.`);
+//   }
+
+//   cambiarEdad = (nuevaEdad) => {
+//     this.edad = nuevaEdad;
+//   };
+// }
+
+// const persona1 = new Persona("Juan Pérez");
+
+// console.log(persona1); // 30
+
+// console.log("****************************"); // 30
+
+// persona1.cambiarEdad(30);
+
+// console.log(persona1); // 30
+
+// persona1.saludar(9)
+
+
+
+
+
+
+
+
+
+
+

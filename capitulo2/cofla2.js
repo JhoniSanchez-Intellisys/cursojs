@@ -99,3 +99,39 @@
 //   const b = prompt("Segundo numero");
 //   division(parseInt(a), parseInt(b));
 // }
+
+
+
+
+class Celular {
+    constructor(color, peso, resolucionPantalla, resolucionCamara, ram){
+        this.color = color, 
+        this.peso = peso,
+        this.resolucionPantalla = resolucionPantalla, 
+        this.resolucionCamara = resolucionCamara, 
+        this.ram = ram,
+        this.estado = false
+        this.info = `color: ${this.color}, peso: ${this.peso}, resolucionPantalla: ${this.resolucionPantalla}-${this.resolucionCamara}-${this.estado}`
+    }
+    encender() {
+        if(this.estado === false){
+            this.estado = true
+        }else{
+            this.estado = false
+        }        
+    }
+    reiniciar() {
+        alert("Reiniciando...")
+        if(this.estado === false){
+            this.estado = true
+        }      
+    }    
+    tomarFoto() {
+        alert("Tomar foto...")      
+    }    
+    grabar() {
+        alert("Grabando...")       
+    }
+}
+const iphone = new Celular("negro", 155, 1080, 100, 16)
+console.log(iphone.info)
